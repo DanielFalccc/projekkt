@@ -1,0 +1,389 @@
+    /* fonty */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap');
+
+/* globální nastavení */
+* {box-sizing: border-box;}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* navigace */
+nav {
+  background-color: black;
+  padding: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  max-width: 1000px;
+  margin: auto;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  padding-right: 12px;
+}
+
+/* hlavička */
+
+header {
+  position: relative;
+  height: 300px;
+  background-color: cornflowerblue;
+}
+
+header > h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1rem 2;
+  position: absolute;
+  color: white;
+  left: 220px;
+  top: 30px;
+}
+
+#obrazek-kocka {
+  font-size: 180px;
+  position: absolute;
+  left: 10px;
+  bottom: 0px;  
+}
+
+#obrazek-miska {
+  font-size: 50px;
+  position: absolute;
+  color: brown;
+  left: 190px;
+  bottom: 0px;   
+}
+
+#obrazek-strom {
+  font-size: 280px;
+  position: absolute;
+  color: darkgreen;
+  right: 10px;
+  bottom: 0px; 
+}
+
+/* obsah */
+
+main {
+  max-width: 1000px;
+  margin: 0;
+  padding: 40px
+  
+}
+
+/* patička */
+footer {
+  background-color: white;
+  text-align: center;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0;
+  display: flex;
+}
+
+h2 {
+  padding: 50px;
+  margin: 1rem 2;
+}
+
+img {
+  padding: 50px;
+}
+
+button {
+  color: #ffffff;
+  background: #4B6289;
+  border: none;
+  padding: 7px 10px;
+}
+
+button:hover {
+  background: #298fa1;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px;
+  border-bottom: 1px solid #dddddd;
+}
+
+a:hover {
+  color: #52bdc1;
+}
+
+.nav-items {
+  display: none;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-items.opened {
+  display: block;
+}
+
+@media only screen and (max-width:700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+  }
+}
+
+#menuthing1 {
+  font-size: 18px;
+  position: absolute;
+  right: 150px;
+  bottom: 0px;  
+}
+
+#menuthing2 {
+  font-size: 18px;
+  position: absolute;
+  right: 200px;
+  bottom: 0px;  
+}
+
+#menuthing3 {
+  font-size: 18px;
+  position: absolute;
+  right: 300px;
+  bottom: 0px;  
+}
+
+#menuthing4 {
+  font-size: 18px;
+  position: absolute;
+  right:  350px;
+  bottom: 0px;  
+}
+
+#menuimage {
+  position: sticky;
+  left: 00px;
+ bottom: 2px;
+ top: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: 2, 3fr;
+  grid-auto-flow: row;
+ 
+}
+
+.obrazek {
+  flex: 1 0 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  /*background-color: blueviolet;*/
+}
+
+#k1 {
+  background-image: url(./obrazky/kocka1.jpg);
+}
+
+#k2 {
+  background-image: url(./obrazky/kocka2.jpg);
+  background-position-y: 30%;
+}
+
+#k3 {
+  background-image: url(./obrazky/kocka3.jpg);
+  background-position: left;
+}
+
+#k4 {
+  background-image: url(./obrazky/kocka4.jpg);
+}
+
+#k5 {
+  background-image: url(./obrazky/kocka5.jpg);
+}
+
+#k6 {
+  background-image: url(./obrazky/kocka6.jpg);
+}
+
+@media only screen and (max-width: 780px) {
+  .galerie {
+    flex-direction: column;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.pink {
+  grid-area: P;
+
+}
+
+.purple {
+  grid-area: U;
+
+}
+
+.blue {
+  grid-area: B;
+
+}
+
+.teal {
+  grid-area: T;
+  text-align: left;
+  font-size: 50px; 
+}
+
+.green {
+  grid-area: G;
+}
+
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 20px);
+  grid-template-rows: repeat(4, 20px);
+}
+
+@media only screen and (max-width: 780px) {
+  .container {
+   display: grid;
+  grid-template-columns: repeat(5, 20px);
+  grid-template-rows: repeat(2, 20px);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section {
+   size: 300px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .p {
+   size: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #obrazek-kocka {
+   font-size: 100px;
+   position: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #obrazek-miska {
+   font-size: 50px;
+   position: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #obrazek-strom {
+   font-size: 100px;
+   position: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #titul {
+   font-size: 50px;
+   position: center;
+  }
+}
+
+:root {
+  --color-light: rgb(242, 242, 242);
+  --color-dark: rgb(22, 22, 22);
+  --font-header: 'Raleway', sans-serif;
+  --font-text: 'Roboto', sans-serif;
+  --form-border-radius: 4px;
+  --form-input-border: 1px solid var(--color-primary);
+  --font-basic-size: 1.2rem;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+.popup-overlay {
+  background-color: rgba(52, 52, 52, 0.52);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.popup-window {
+  width: 400px;
+  height: 400px;
+  padding: 1rem;
+  position: absolute;
+  left: calc((100vw - 400px)/2);
+  top: calc((100vh - 400px)/2);
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(0,100,177,1) 100%); 
+  border-radius: 12px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.72);
+}
+
+.star {
+  fill: orange;
+  stroke: aliceblue;
+  stroke-width: 4px;
+}
+
+.star {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: relative;
+  animation-name: move-and-fade;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move-and-fade {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  50% {
+    left: 50%;
+    opacity: 0.5;
+  }
+  100% {
+    left: 100%;
+    opacity: 1;
+  }
+}
+
+
+
+
